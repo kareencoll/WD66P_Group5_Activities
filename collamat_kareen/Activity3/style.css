@@ -18,6 +18,7 @@ hr{
 	color: #AE7E5E;
 }
 .container{
+	padding-bottom: 180px;
 }
 .upperfold{
 	background-color: #F8F7F2;
@@ -58,6 +59,7 @@ img{
 	margin: auto;
 	width: 700px;
 	padding-top: 30px;
+	padding-bottom: 80px;
 }
 .three, .four{
 	float:left;
