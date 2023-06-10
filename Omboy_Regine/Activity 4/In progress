@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <span class="border"></span>
+    <span class="border border-primary"></span>
+    <img src="Picture.jpg" alt="100x100"class="rounded">
+
+
+    </head>
+</html>
