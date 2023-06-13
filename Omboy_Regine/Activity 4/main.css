@@ -1,0 +1,165 @@
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: .2s linear;
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+}
+section{
+    padding: 2rem 9%;
+}
+.heading{   
+    text-align: center;
+    font-size: 2rem;
+    color: black;
+    padding: 1rem;
+    margin: 2rem 2rem;
+}
+.heading span{
+    color:azure;
+}
+header{
+    position: fixed;
+    top: 0; right: 0; left: 0;
+    background: whitesmoke;
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;  
+    box-shadow: 0 .5rem 1rem rgb(0,0,0,.1);
+}
+header .navbar a{
+    font-size: 2rem;
+    padding: 0 6.5rem;
+    color: black;
+}
+header .navbar a:hover{
+    color: chocolate;
+}
+.home{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    background-position: center;
+}
+.home .video-container video{
+    left: 0;
+    top: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.about h1 span{
+    color: chocolate;
+    font-size: 6rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+.about h1 span:hover{
+    color: black;
+}
+.about{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    justify-content: center;
+    background-position: center;
+}
+.about video{
+    left: 0;
+    top: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.experience h1 span{
+    color: chocolate;
+    font-size: 6rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+.experience h1 span:hover{
+    color: black;
+}
+.experience{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    justify-content: center;
+    background-position: center; 
+}
+.experience video{
+    left: 0;
+    top: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100;
+}
+.education h1 span{
+    color: chocolate;
+    font-size: 6rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center; 
+}
+.education h1 span:hover{
+    color: black;
+}
+.education{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    justify-content: center;
+    background-position: center; 
+}
+.education video{
+    left: 0;
+    top: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100;
+}
+.contact h1 span{
+    color: chocolate;
+    font-size: 5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center; 
+}
+.contact h1 span:hover{
+    color: black;
+}
+.contact .social-accounts h2{
+    font-size: 3rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center; 
+}
+.contact .social-accounts a{
+    font-size: 4rem;
+    justify-content: space-between;
+    text-decoration: none;
+    align-items: center;
+    color: black;
+    padding-left: 20%;
+}
+.contact .social-accounts a:hover{
+    color: blue;
+}
+.footer .credit{
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+}
+.footer .credit:hover{
+    color: blue;
+}
