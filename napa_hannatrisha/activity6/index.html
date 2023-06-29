@@ -13,8 +13,38 @@
   
   <body>
 
-    <form>
         <div class="mb-3">
+          <div>
+            <h5>Welcome to My System</h5>
+          </div>  
+
+          <h5>Account Login</h5>
+
+          <!-- Alert -->
+          <div>
+            <div class="alert alert-success d-none" id="successfulLogin"role="alert">
+              Successfully Login
+            </div>
+            <div class="alert alert-danger d-none" id="wrongLogin"role="alert">
+              Wrong email and password
+            </div>
+            <div class="alert alert-danger d-none" id="wrongEmailLogin"role="alert">
+              Wrong email
+            </div>
+            <div class="alert alert-danger d-none" id="wrongPassLogin"role="alert">
+              Wrong password
+            </div>
+            <div class="alert alert-warning d-none" id="blankLogin"role="alert">
+              Please input email and password
+            </div>
+            <div class="alert alert-warning d-none" id="blankEmailLogin"role="alert">
+              Please input an email
+            </div>
+            <div class="alert alert-warning d-none" id="blankPassLogin"role="alert">
+              Please input a password
+            </div>
+          </div>
+
           <label for="exampleInputEmail1" class="form-label">Email address</label>
           <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
           <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
@@ -25,10 +55,97 @@
         </div>
         <div>
           <!-- <input type="checkbox" class="form-check-input" id="exampleCheck1"> -->
-          <a href="" target="_blank" class="form-check-label" for="exampleCheck1">Register your acount</a> | 
+          <a href="infopage.html" target="_self" class="form-check-label" for="exampleCheck1">Register your acount</a> 
         </div>
-        <button type="submit" class="btn btn-primary">Login</button>
-    </form>
+      </br> 
+        <button type="submit" class="btn btn-primary" id="login" onclick="logIn()">Login</button>
+    
+
+
+    <script>
+      function logIn()
+      {
+        var defaultEmail = "admin";
+        var defaultPassword = "123"
+
+        let emailaddress = document.getElementById("exampleInputEmail1").value;
+        let password = document.getElementById("exampleInputPassword1").value;
+
+        if (emailaddress == defaultEmail && password == defaultPassword)
+        {
+            document.getElementById("successfulLogin").classList.remove("d-none");
+            document.getElementById("blankLogin").classList.add("d-none");
+            document.getElementById("blankEmailLogin").classList.add("d-none");
+            document.getElementById("blankPassLogin").classList.add("d-none");
+            document.getElementById("wrongLogin").classList.add("d-none");
+            document.getElementById("wrongEmailLogin").classList.add("d-none");
+            document.getElementById("wrongPassLogin").classList.add("d-none");
+        }
+        else if (emailaddress == "" && password == "")
+        {
+            document.getElementById("successfulLogin").classList.add("d-none");
+            document.getElementById("blankLogin").classList.remove("d-none");
+            document.getElementById("blankEmailLogin").classList.add("d-none");
+            document.getElementById("blankPassLogin").classList.add("d-none");
+            document.getElementById("wrongLogin").classList.add("d-none");
+            document.getElementById("wrongEmailLogin").classList.add("d-none");
+            document.getElementById("wrongPassLogin").classList.add("d-none");
+        }
+        else if (emailaddress == "" && password == defaultPassword)
+        {
+            document.getElementById("successfulLogin").classList.add("d-none");
+            document.getElementById("blankLogin").classList.add("d-none");
+            document.getElementById("blankEmailLogin").classList.remove("d-none");
+            document.getElementById("blankPassLogin").classList.add("d-none");
+            document.getElementById("wrongLogin").classList.add("d-none");
+            document.getElementById("wrongEmailLogin").classList.add("d-none");
+            document.getElementById("wrongPassLogin").classList.add("d-none");
+        }
+        else if (emailaddress == defaultEmail && password == "")
+        {
+            document.getElementById("successfulLogin").classList.add("d-none");
+            document.getElementById("blankLogin").classList.add("d-none");
+            document.getElementById("blankEmailLogin").classList.add("d-none");
+            document.getElementById("blankPassLogin").classList.remove("d-none");
+            document.getElementById("wrongLogin").classList.add("d-none");
+            document.getElementById("wrongEmailLogin").classList.add("d-none");
+            document.getElementById("wrongPassLogin").classList.add("d-none");
+        }
+        else if (password == "" || password == defaultPassword)
+        {
+            document.getElementById("successfulLogin").classList.add("d-none");
+            document.getElementById("blankLogin").classList.add("d-none");
+            document.getElementById("blankEmailLogin").classList.add("d-none");
+            document.getElementById("blankPassLogin").classList.add("d-none");
+            document.getElementById("wrongLogin").classList.add("d-none");
+            document.getElementById("wrongEmailLogin").classList.remove("d-none");
+            document.getElementById("wrongPassLogin").classList.add("d-none");
+        }
+        else if (emailaddress == "" || emailaddress == defaultEmail)
+        {
+            document.getElementById("successfulLogin").classList.add("d-none");
+            document.getElementById("blankLogin").classList.add("d-none");
+            document.getElementById("blankEmailLogin").classList.add("d-none");
+            document.getElementById("blankPassLogin").classList.add("d-none");
+            document.getElementById("wrongLogin").classList.add("d-none");
+            document.getElementById("wrongEmailLogin").classList.add("d-none");
+            document.getElementById("wrongPassLogin").classList.remove("d-none");
+        }
+        else
+        {
+            document.getElementById("successfulLogin").classList.add("d-none");
+            document.getElementById("blankLogin").classList.add("d-none");
+            document.getElementById("blankEmailLogin").classList.add("d-none");
+            document.getElementById("blankPassLogin").classList.add("d-none");
+            document.getElementById("wrongLogin").classList.remove("d-none");
+            document.getElementById("wrongEmailLogin").classList.add("d-none");
+            document.getElementById("wrongPassLogin").classList.add("d-none");
+        }
+      }
+      
+
+    
+    </script>
      
     <!-- bootstrap cdn -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
