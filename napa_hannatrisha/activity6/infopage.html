@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Required Information</title>
+      <link rel="stylesheet" href="infopage.css" />
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  </head>
+  
+  <body>
+    
+    <form id=""class="row g-3" action="backendinfo.php" method="POST">
+      <div class="topSpacingInfoPage"></div>
+        <div class="col-md-4">
+          <label for="validationDefault01" class="form-label">First name *</label>
+          <input type="text" class="form-control" id="validationDefault01" name="firstName" required>
+        </div>
+        <div class="col-md-4">
+          <label for="validationDefault02" class="form-label">Last name *</label>
+          <input type="text" class="form-control" id="validationDefault02" name="lastName" required>
+        </div>
+        <div class="col-md-4">
+          <label for="validationDefaultUsername" class="form-label">Birthday *</label>
+          <div class="input-group">
+            <input type="date" class="form-control" id="validationDefaultUsername" aria-describedby="inputGroupPrepend2" name="birthday" required>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <label for="validationDefault02" class="form-label">Address *</label>
+          <textarea class="form-control" id="validationDefault02" value="Otto" name="address" required></textarea>
+        </div>
+        <div class="col-md-6">
+          <label for="validationDefault03" class="form-label">City *</label>
+          <input type="text" class="form-control" id="validationDefault03" name="city" required>
+        </div>
+        <div class="col-md-3">
+          <label for="validationDefault04" class="form-label">Province *</label>
+          <select class="form-select" id="validationDefault04" name="province" required>
+            <option selected disabled value="">Choose...</option>
+            <option>Abra</option>
+            <option>Bulacan</option>
+            <option>Cagayan</option>
+            <option>Isabela</option>
+            <option>Leyte</option>
+            <option>Tuguegarao</option>
+            <option>Metro Manila</option>
+            <option>Other Provinces</option>
+          </select>
+        </div>
+        <div class="col-md-3">
+          <label for="validationDefault05" class="form-label">Zip *</label>
+          <input type="text" class="form-control" id="validationDefault05" name="zip" required>
+        </div>
+        <div class="col-md-4">
+          <label for="validationDefault06" class="form-label">Email *</label>
+          <input type="text" class="form-control" id="validationDefault06" name="email" required>
+        </div>
+        <div class="col-md-4">
+          <label for="validationDefault07" class="form-label">Password *</label>
+          <input type="password" class="form-control" id="validationDefault07" name="password" required>
+        </div>
+        <div class="col-md-4">
+          <label for="validationDefault08" class="form-label">Confirm Password *</label>
+          <input type="password" class="form-control" id="validationDefault08" name="confirmpass" required>
+        </div>
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="subscribe" id="invalidCheck2" name="subscribe">
+            <label class="form-check-label" for="invalidCheck2">
+              Subscribe for the latest news
+            </label>
+          </div>
+        </div>
+        <center>
+        <div class="col-12">
+          <button class="btn btn-primary" type="submit">Create your account</button>
+        </div>
+        </center>
+    </form>
+     
+    <!-- bootstrap cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+
+  </body>
+</html>
