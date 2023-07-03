@@ -1,0 +1,45 @@
+.titlePage
+{
+    display: grid;
+    width: 100%;
+    height: 10px;
+}
+
+.topSpacing
+{
+    display: grid;
+    height: 150px;
+}
+
+.topSpacingInfoPage
+{
+    padding-top: 100px;
+}
+
+.mb-3
+{
+    display: flex;
+    width: 50%;
+    flex-wrap: wrap;
+    
+}
+
+.firstSpacing
+{
+    display: grid;
+    width: 100%;
+    height: 50px;
+}
+
+.secondSpacing
+{
+    display: grid;
+    width: 100%;
+    height: 20px
+}
+
+.thirdSpacing
+{
+    display: flex;
+    width: 800px;
+}
