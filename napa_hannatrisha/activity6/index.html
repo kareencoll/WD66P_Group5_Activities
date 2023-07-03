@@ -12,53 +12,66 @@
   </head>
   
   <body>
+  
+      <div class="topSpacing"></div>
+      <center>
+          <div class="mb-3">
 
-        <div class="mb-3">
-          <div>
-            <h5>Welcome to My System</h5>
-          </div>  
+            <div class="titlePage">
+              <center>
+              <h5>Welcome to My System</h5>
+              </center>
+            </div>  
 
-          <h5>Account Login</h5>
+            <div class="firstSpacing"> </div>
 
-          <!-- Alert -->
-          <div>
-            <div class="alert alert-success d-none" id="successfulLogin"role="alert">
-              Successfully Login
+            <h5>Account Login</h5>
+
+            <div class="secondSpacing"> </div>
+
+            <!-- Alert -->
+            <div>
+              <div class="alert alert-success d-none" id="successfulLogin"role="alert">
+                Successfully Login
+              </div>
+              <div class="alert alert-danger d-none" id="wrongLogin"role="alert">
+                Wrong email and password
+              </div>
+              <div class="alert alert-danger d-none" id="wrongEmailLogin"role="alert">
+                Wrong email
+              </div>
+              <div class="alert alert-danger d-none" id="wrongPassLogin"role="alert">
+                Wrong password
+              </div>
+              <div class="alert alert-warning d-none" id="blankLogin"role="alert">
+                Please input email and password
+              </div>
+              <div class="alert alert-warning d-none" id="blankEmailLogin"role="alert">
+                Please input an email
+              </div>
+              <div class="alert alert-warning d-none" id="blankPassLogin"role="alert">
+                Please input a password
+              </div>
             </div>
-            <div class="alert alert-danger d-none" id="wrongLogin"role="alert">
-              Wrong email and password
-            </div>
-            <div class="alert alert-danger d-none" id="wrongEmailLogin"role="alert">
-              Wrong email
-            </div>
-            <div class="alert alert-danger d-none" id="wrongPassLogin"role="alert">
-              Wrong password
-            </div>
-            <div class="alert alert-warning d-none" id="blankLogin"role="alert">
-              Please input email and password
-            </div>
-            <div class="alert alert-warning d-none" id="blankEmailLogin"role="alert">
-              Please input an email
-            </div>
-            <div class="alert alert-warning d-none" id="blankPassLogin"role="alert">
-              Please input a password
-            </div>
+
+            <div class="thirdSpacing"> </div>
+
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
           </div>
-
-          <label for="exampleInputEmail1" class="form-label">Email address</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-        </div>
-        <div class="mb-3">
-          <label for="exampleInputPassword1" class="form-label">Password</label>
-          <input type="password" class="form-control" id="exampleInputPassword1">
-        </div>
-        <div>
-          <!-- <input type="checkbox" class="form-check-input" id="exampleCheck1"> -->
-          <a href="infopage.html" target="_self" class="form-check-label" for="exampleCheck1">Register your acount</a> 
-        </div>
-      </br> 
-        <button type="submit" class="btn btn-primary" id="login" onclick="logIn()">Login</button>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div>
+            <!-- <input type="checkbox" class="form-check-input" id="exampleCheck1"> -->
+            <a href="infopage.html" target="_self" class="form-check-label" for="exampleCheck1">Register your acount</a> 
+          </div>
+        </br> 
+          <button type="submit" class="btn btn-primary" id="login" onclick="logIn()">Login</button>
+      </center>
+        
     
 
 

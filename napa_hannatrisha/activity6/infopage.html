@@ -12,71 +12,74 @@
   </head>
   
   <body>
-
-    <form class="row g-3" action="backendinfo.php" method="POST">
-      <div class="col-md-4">
-        <label for="validationDefault01" class="form-label">First name *</label>
-        <input type="text" class="form-control" id="validationDefault01" name="firstName" required>
-      </div>
-      <div class="col-md-4">
-        <label for="validationDefault02" class="form-label">Last name *</label>
-        <input type="text" class="form-control" id="validationDefault02" name="lastName" required>
-      </div>
-      <div class="col-md-4">
-        <label for="validationDefaultUsername" class="form-label">Birthday *</label>
-        <div class="input-group">
-          <input type="date" class="form-control" id="validationDefaultUsername" aria-describedby="inputGroupPrepend2" name="birthday" required>
+    
+    <form id=""class="row g-3" action="backendinfo.php" method="POST">
+      <div class="topSpacingInfoPage"></div>
+        <div class="col-md-4">
+          <label for="validationDefault01" class="form-label">First name *</label>
+          <input type="text" class="form-control" id="validationDefault01" name="firstName" required>
         </div>
-      </div>
-      <div class="col-md-4">
-        <label for="validationDefault02" class="form-label">Address *</label>
-        <textarea class="form-control" id="validationDefault02" value="Otto" name="address" required></textarea>
-      </div>
-      <div class="col-md-6">
-        <label for="validationDefault03" class="form-label">City *</label>
-        <input type="text" class="form-control" id="validationDefault03" name="city" required>
-      </div>
-      <div class="col-md-3">
-        <label for="validationDefault04" class="form-label">Province *</label>
-        <select class="form-select" id="validationDefault04" name="province" required>
-          <option selected disabled value="">Choose...</option>
-          <option>Abra</option>
-          <option>Bulacan</option>
-          <option>Cagayan</option>
-          <option>Isabela</option>
-          <option>Leyte</option>
-          <option>Tuguegarao</option>
-          <option>Metro Manila</option>
-          <option>Other Provinces</option>
-        </select>
-      </div>
-      <div class="col-md-3">
-        <label for="validationDefault05" class="form-label">Zip *</label>
-        <input type="text" class="form-control" id="validationDefault05" name="zip" required>
-      </div>
-      <div class="col-md-4">
-        <label for="validationDefault06" class="form-label">Email *</label>
-        <input type="text" class="form-control" id="validationDefault06" name="email" required>
-      </div>
-      <div class="col-md-4">
-        <label for="validationDefault07" class="form-label">Password *</label>
-        <input type="password" class="form-control" id="validationDefault07" name="password" required>
-      </div>
-      <div class="col-md-4">
-        <label for="validationDefault08" class="form-label">Confirm Password *</label>
-        <input type="password" class="form-control" id="validationDefault08" name="confirmpass" required>
-      </div>
-      <div class="col-12">
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="subscribe" id="invalidCheck2" name="subscribe">
-          <label class="form-check-label" for="invalidCheck2">
-            Subscribe for the latest news
-          </label>
+        <div class="col-md-4">
+          <label for="validationDefault02" class="form-label">Last name *</label>
+          <input type="text" class="form-control" id="validationDefault02" name="lastName" required>
         </div>
-      </div>
-      <div class="col-12">
-        <button class="btn btn-primary" type="submit">Create your account</button>
-      </div>
+        <div class="col-md-4">
+          <label for="validationDefaultUsername" class="form-label">Birthday *</label>
+          <div class="input-group">
+            <input type="date" class="form-control" id="validationDefaultUsername" aria-describedby="inputGroupPrepend2" name="birthday" required>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <label for="validationDefault02" class="form-label">Address *</label>
+          <textarea class="form-control" id="validationDefault02" value="Otto" name="address" required></textarea>
+        </div>
+        <div class="col-md-6">
+          <label for="validationDefault03" class="form-label">City *</label>
+          <input type="text" class="form-control" id="validationDefault03" name="city" required>
+        </div>
+        <div class="col-md-3">
+          <label for="validationDefault04" class="form-label">Province *</label>
+          <select class="form-select" id="validationDefault04" name="province" required>
+            <option selected disabled value="">Choose...</option>
+            <option>Abra</option>
+            <option>Bulacan</option>
+            <option>Cagayan</option>
+            <option>Isabela</option>
+            <option>Leyte</option>
+            <option>Tuguegarao</option>
+            <option>Metro Manila</option>
+            <option>Other Provinces</option>
+          </select>
+        </div>
+        <div class="col-md-3">
+          <label for="validationDefault05" class="form-label">Zip *</label>
+          <input type="text" class="form-control" id="validationDefault05" name="zip" required>
+        </div>
+        <div class="col-md-4">
+          <label for="validationDefault06" class="form-label">Email *</label>
+          <input type="text" class="form-control" id="validationDefault06" name="email" required>
+        </div>
+        <div class="col-md-4">
+          <label for="validationDefault07" class="form-label">Password *</label>
+          <input type="password" class="form-control" id="validationDefault07" name="password" required>
+        </div>
+        <div class="col-md-4">
+          <label for="validationDefault08" class="form-label">Confirm Password *</label>
+          <input type="password" class="form-control" id="validationDefault08" name="confirmpass" required>
+        </div>
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="subscribe" id="invalidCheck2" name="subscribe">
+            <label class="form-check-label" for="invalidCheck2">
+              Subscribe for the latest news
+            </label>
+          </div>
+        </div>
+        <center>
+        <div class="col-12">
+          <button class="btn btn-primary" type="submit">Create your account</button>
+        </div>
+        </center>
     </form>
      
     <!-- bootstrap cdn -->
